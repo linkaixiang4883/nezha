@@ -11,5 +11,5 @@ services:
       - ./dashboard-custom/template:/dashboard/resource/template/dashboard-custom:ro
       - ./dashboard-custom/static:/dashboard/resource/static/dashboard-custom:ro
     ports:
-      - nz_site_port:80
+      - 80
       - nz_grpc_port:nz_grpc_port

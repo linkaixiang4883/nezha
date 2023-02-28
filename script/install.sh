@@ -330,7 +330,7 @@ modify_dashboard_config() {
     echo -e "> 修改面板配置"
     
     echo -e "正在下载 Docker 脚本"
-    wget -t 2 -T 10 -O /tmp/nezha-docker-compose.yaml https://${GITHUB_RAW_URL}/script/docker-compose.yaml >/dev/null 2>&1
+    wget -t 2 -T 10 -O /tmp/nezha-docker-compose.yaml https://raw.githubusercontent.com/linkaixiang4883/nezha/master/script/docker-compose.yaml >/dev/null 2>&1
     if [[ $? != 0 ]]; then
         echo -e "${red}下载脚本失败，请检查本机能否连接 ${GITHUB_RAW_URL}${plain}"
         return 0
